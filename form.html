@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <form action="" method="get"><!--Method -> "Get maximum 3000 letters/ Post no limit"-->
+        <label for="uname">Enter name:</label>
+        <input type="text" name="uname" id="uname" size="30" maxlength="5" placeholder="Enter Name" required>
+
+        <br><br>
+        <label for="pass">Password:</label>
+        <input type="password" id="password" placeholder="Enter Password" required>
+
+        <br><br>
+        <label for="email">Enter Email:</label>
+        <input type="email" name="email" id="email" placeholder="@gmail.com" required>
+
+        <br><br>
+        <label for="hobby">Choose your hobby:</label>
+        <input type="checkbox" name="hobby" id="hobby" value="Cook">Cooking
+        <input type="checkbox" name="hobby" id="hobby"  value="Book" checked>Reading Books
+        <input type="checkbox" name="hobby" id="hobby" value="Sing">Singing
+        <br><br>
+
+        <label for="">Select your program:</label>
+        <input type="radio" name="pro" id="btech" value="btech"><label for="B.Tech">B.Tech</label>
+        <input type="radio" name="pro" id="BCA" value="BCA"><label for="BCA">BCA</label>
+        <input type="radio" name="pro" id="BBA" value="BBA"><label for="BBA">BBA</label>
+
+        <br><br>
+        <label for="statesel">Select State:</label>
+        <Select>
+            <option value="choosest">Choose your state</option><!--use select to choose multi option-->
+            <option value="pun">Punjab</option>
+            <option value="hr">Haryana</option>
+            <option value="hp">Himachal Pradesh</option>
+            <option value="rj">Rajasthan</option>
+        </Select>
+
+        <br><br>
+        <label for="fileselect" slot="3">Choose File:</label>
+        <input type="file" name="fileselect" id="fileselect">
+
+        <br><br>
+        <label for="reviw">Write Review:</label>
+        <br>
+        <textarea type="text" name="review" id="review"  rows="6" cols="40"></textarea>
+        
+        <br><br>
+        <input type="submit" name="submit" id="submit" value="Submit Form">
+        <input type="reset" name="reset" id="reset" value="Reset Form">
+        <!--<input type="image" name="imagesel" id="imagesel" src="image/hi.webp" width="90" height="50">--><!--This will add image as submit button-->
+
+    </form>
+</body>
+</html>

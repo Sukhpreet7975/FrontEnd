@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         /*Universal Selector*/
+         *{
+             font-weight: bolder;   
+         }
+
+         h3:hover{
+            background-color: darkgoldenrod;
+         }
+
+         h1,h2{
+            font-family: 'Times New Roman', Times, serif;
+         }
+
+         /*Type Selector*/
+        h3{
+            color: mediumaquamarine;
+            background-color: chocolate;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-style: italic;
+        }
+
+        /*Id Selector*/
+        #p1{
+            color: blueviolet;
+        }
+        #p2{
+            color: tomato;
+        }
+
+        /*Attribute Selector*/
+        a[href="form.html"]{
+            background-color: rgb(187, 137, 223);
+        }
+        a[href="Llist.html"]{
+            background-color: rgb(166, 227, 159);
+        }
+
+        /*Class Selector*/
+        .c1{
+            color: navy;
+        }
+
+        .d1 p{
+            background-color: plum;
+        }
+    </style>
+</head>
+<body>
+    <h1>Front End</h1>
+    <h2>Learning CSS and JS Topics</h2>
+    <h3>Learning CSS and JS Topics</h3>
+    <h4 class="c1">Learning CSS and JS Topics</h4>
+    <h5 class="c1">Learning CSS and JS Topics</h5>
+    <h6 class="c1">Learning CSS and JS Topics</h6>
+
+    <a href="form.html">Forms</a>
+    <a href="Llist.html">List</a>
+
+    <p id="p1">Para 1</p>
+    <p id="p2">Para 2</p>
+
+    <div class="d1">
+        <p>This is Div para</p>
+    </div>
+</body>
+</html>
